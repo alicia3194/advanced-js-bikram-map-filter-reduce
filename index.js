@@ -159,3 +159,14 @@ const sentenceElements = [
 let result8 = sentenceElements.reduce((acc, palabra) => {
   return acc + palabra + " ";
 }, "");
+
+//Ejercicio 8
+let result9 = books.filter(
+  (currentValue, index) => books[index].category == "code"
+);
+result9 = result9.map((currentValue, index) => {
+  return result9[index].price;
+});
+result9 = result9.reduce(
+  (accumulator, currentValue) => (accumulator += currentValue)
+);
